@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
           rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_media.css">
 </head>
 <body>
 
@@ -20,7 +21,8 @@
 
     <header class="header">
         <a href="#" class="header__logo">Olena Bondar</a>
-        <div class="container">
+
+        <div class="header__container container">
             <nav class="menu__body">
                 <ul class="menu__list">
                     <li><a href="02_StopMyShutter_about_me.html" class="menu__link">КТО Я?</a></li>
@@ -32,7 +34,14 @@
                 </ul>
             </nav>
         </div>
+
         <a href="#" class="header-btn">войти</a>
+
+        <div class="menu__icon icon-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
     <div class="quote">
         <div class="vertical-line vertical-line__right"></div>
@@ -57,16 +66,19 @@
                 <img class="social-img" src="image/quote/facebook.svg" alt="Фейсбук"></a>
         </div>
 
-        <div class="container">
+        <div class="quote__container container">
             <div class="quote__content">
                 <h2 class="quote__title"><span class="quote__text">Психолог</span> – это человек, который
                     принимает
                     Вас таким, какой вы ест. </h2>
                 <p class="quote__title__author">Бондарь Елена</p>
                 <div class="quote__buttons round_page_buttons">
-                    <div class="line"></div>
-                    <p class="active_page">01 /</p>
-                    <p class="quote__under_title under_title ">03</p>
+                    <div class="round_page_buttons__string">
+                        <div class="line"></div>
+                        <p class="active_page">01 /<span class="quote__under_title under_title ">03</span></p>
+<!--                        <p class="quote__under_title under_title ">03</p>-->
+                    </div>
+                    <div class="round_page_buttons__button">
                     <button class="round_button btn_prev">
                         <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 4.68005V6.32068H3.20312L6.17188 9.32849L5 10.5004L0 5.50037L5 0.500366L6.17188 1.67224L3.20312 4.68005H15Z"
@@ -79,6 +91,7 @@
                                   fill="white"/>
                         </svg>
                     </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -323,6 +336,11 @@
             </div>
         </div>
     </div>
+
+    <ul class="my_programs__method  my_method__method biggest_text">
+        <li>Мои программы</li>
+        <li>Мои программы</li>
+    </ul>
 </section>
 
 <section class="road">
@@ -334,10 +352,10 @@
     <div class="vertical-line vertical-line__center"></div>
     <div class="vertical-line vertical-line__left"></div>
 
-    <ul class="road__method my_method__method biggest_text">
-        <li>Мои программы</li>
-        <li>Мои программы</li>
-    </ul>
+<!--    <ul class="road__method my_method__method biggest_text">-->
+<!--        <li>Мои программы</li>-->
+<!--        <li>Мои программы</li>-->
+<!--    </ul>-->
 
     <div class="road__content">
         <div class="road_container container">
