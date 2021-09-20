@@ -1,6 +1,12 @@
+@media screen and (max-width: 1090px) {
+    .my_programs__item-active {
+        /*height: auto;*/
+    }
+}
+
 @media screen and (max-width: 1200px) {
     .container {
-        max-width: 1140px;
+        width: 1140px;
     }
 
     .header__container {
@@ -9,7 +15,7 @@
 
     .header {
         padding: 33px 100px 30px;
-        /*flex-direction: column;*/
+
     }
 
     .icon-menu {
@@ -73,14 +79,18 @@
 
     .whoI .social {
         z-index: 5;
-        background: #FAFCFF;
+        /*background: #FAFCFF;*/
+    }
+
+    .btn::before {
+        right: 45px;
     }
 }
 
 @media screen and (max-width: 992px) {
     .container {
-        max-width: 960px;
-        padding: 0 15px;
+        width: 960px;
+        /*padding: 0 15px 50px;*/
     }
 
     .line {
@@ -156,77 +166,147 @@
         width: 65%;
     }
 
-
-    @media (max-width: 768px) {
-        .container {
-            max-width: 720px;
-        }
-
-        .quote__container {
-            padding-top: 100px;
-        }
-
-        .quote__content {
-            font-size: 45px;
-        }
-
-        .quote__title__author {
-            margin-bottom: 100px;
-        }
-
-        .round_page_buttons__string {
-            justify-content: center;
-            width: 100%;
-        }
-
-        .quote__under_title {
-            margin-right: 0;
-        }
-
-        .round_page_buttons__button {
-            display: flex;
-            align-items: center;
-            width: 100%;
-            justify-content: center;
-        }
-        .learn_more__btn {
-            width: 85%;
-        }
-
+    .my_method__btn {
+        width: 45%;
     }
 
-    @media (max-width: 576px) {
-        .container {
-            max-width: 540px;
-        }
-
+    .my_programs__col {
+        flex: 0 0 50%;
+        margin-bottom: 30px;
     }
 
-    @media screen and (min-width: 575px) {
-        .container {
-            width: 100%;
-            padding-right: 15px;
-            padding-left: 15px;
-        }
+    .biggest_text {
+        font-size: 45px;
+        white-space: pre-line;
+    }
 
-        .header {
-            /*flex-direction: column;*/
-        }
-
-        .header__logo {
-
-            margin-bottom: 10px;
-
-        }
-
-        .header-btn {
-
-            margin-bottom: 10px;
-
-        }
-
-        .icon-menu {
-        }
-
+    .my_programs__method li {
+        width: 50%;
     }
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 720px;
+    }
+
+    .quote__container {
+        padding-top: 100px;
+    }
+
+    .quote__content {
+        font-size: 45px;
+    }
+
+    .quote__title__author {
+        margin-bottom: 100px;
+    }
+
+    .round_page_buttons__string {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .quote__under_title {
+        margin-right: 0;
+    }
+
+    .round_page_buttons__button {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .learn_more__btn {
+        width: 85%;
+    }
+
+    .col {
+        flex: 0 0 50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 540px;
+        padding: 0 70px 0 10px;
+    }
+
+    .whoI_container {
+        flex-direction: column-reverse;
+    }
+
+    .whoI_info {
+        max-width: 100%;
+        padding-right: 75px;
+    }
+
+    .whoI__photo {
+        max-width: 100%;
+    }
+
+    .wrapper a {
+        margin-bottom: 20px;
+    }
+
+    .under_title {
+        padding: 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .progress__player {
+        margin: 0 75px 0 10px;
+    }
+
+    .my_programs__item-active {
+        height: 100%;
+    }
+
+    .my_programs__method li {
+        display: none;
+    }
+
+    .biggest_text {
+        display: none;
+    }
+
+    .road__content {
+        margin: 0 70px 0 10px;
+    }
+
+    .road_container {
+
+        padding: 95px 0 100px;
+    }
+
+    .road__title {
+        padding: 0;
+        font-size: 21px;
+        line-height: 45px;
+    }
+}
+
+@media screen and (min-width: 575px) {
+
+    .header__logo {
+        margin-bottom: 10px;
+    }
+
+    .header-btn {
+        margin-bottom: 10px;
+    }
+}
+
+

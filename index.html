@@ -2,8 +2,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
     <title>Psychologist</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
@@ -76,21 +80,23 @@
                     <div class="round_page_buttons__string">
                         <div class="line"></div>
                         <p class="active_page">01 /<span class="quote__under_title under_title ">03</span></p>
-<!--                        <p class="quote__under_title under_title ">03</p>-->
+                        <!--                        <p class="quote__under_title under_title ">03</p>-->
                     </div>
                     <div class="round_page_buttons__button">
-                    <button class="round_button btn_prev">
-                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M15 4.68005V6.32068H3.20312L6.17188 9.32849L5 10.5004L0 5.50037L5 0.500366L6.17188 1.67224L3.20312 4.68005H15Z"
-                                  fill="white"/>
-                        </svg>
-                    </button>
-                    <button class="round_button btn_next">
-                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.02107e-06 6.32056L1.1645e-06 4.67993L11.7969 4.67993L8.82813 1.67212L10 0.500244L15 5.50024L10 10.5002L8.82813 9.32837L11.7969 6.32056L1.02107e-06 6.32056Z"
-                                  fill="white"/>
-                        </svg>
-                    </button>
+                        <button class="round_button btn_prev">
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 4.68005V6.32068H3.20312L6.17188 9.32849L5 10.5004L0 5.50037L5 0.500366L6.17188 1.67224L3.20312 4.68005H15Z"
+                                      fill="white"/>
+                            </svg>
+                        </button>
+                        <button class="round_button btn_next">
+                            <svg width="15" height="11" viewBox="0 0 15 11" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.02107e-06 6.32056L1.1645e-06 4.67993L11.7969 4.67993L8.82813 1.67212L10 0.500244L15 5.50024L10 10.5002L8.82813 9.32837L11.7969 6.32056L1.02107e-06 6.32056Z"
+                                      fill="white"/>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -106,18 +112,18 @@
     <div class="vertical-line vertical-line__right"></div>
     <div class="vertical-line vertical-line__center"></div>
     <div class="vertical-line vertical-line__left"></div>
-
-    <div class="social">
-        <a class="social-btn whoI__social-btn" href="#">Ютуб
-            <img class="social-img" src="image/whoI/YouTube.svg" alt="Ютуб"></a>
-        <a class="social-btn whoI__social-btn" href="#">Інстаграм
-            <img class="social-img" src="image/whoI/instagram.svg" alt="Інстаграм"></a>
-        <a class="social-btn whoI__social-btn" href="#">Скайп
-            <img class="social-img" src="image/whoI/skype.svg" alt="Скайп"></a>
-        <a class="social-btn whoI__social-btn" href="#">Фейсбук
-            <img class="social-img" src="image/whoI/facebook.svg" alt="Фейсбук"></a>
+    <div>
+        <div class="social social_fixed">
+            <a class="social-btn whoI__social-btn" href="#">Ютуб
+                <img class="social-img" src="image/whoI/YouTube.svg" alt="Ютуб"></a>
+            <a class="social-btn whoI__social-btn" href="#">Інстаграм
+                <img class="social-img" src="image/whoI/instagram.svg" alt="Інстаграм"></a>
+            <a class="social-btn whoI__social-btn" href="#">Скайп
+                <img class="social-img" src="image/whoI/skype.svg" alt="Скайп"></a>
+            <a class="social-btn whoI__social-btn" href="#">Фейсбук
+                <img class="social-img" src="image/whoI/facebook.svg" alt="Фейсбук"></a>
+        </div>
     </div>
-
     <div class="whoI_container container">
         <div class="whoI_info">
             <h3 class="title">Кто я?</h3>
@@ -133,7 +139,9 @@
                 ему нужна помощь, то он чуть ли не больной; кто-то просто не верит в помощь психолога. Психолог не
                 волшебник, который взмахом палочки изменит вашу жизнь и решит все проблемы, или выдаст обещания, советы
                 и рецепты на все случаи жизни.</p>
-            <a class="btn learn_more__btn" href="#">узнать больше</a>
+            <div>
+                <a class="btn learn_more__btn" href="#">узнать больше</a>
+            </div>
         </div>
         <div class="whoI__photo">
             <img src="image/whoI/photo.jpg" alt="photo"/>
@@ -155,7 +163,7 @@
 
     <p class="name-psychologist__height biggest_text">Бондарь Елена Николаевна</p>
 
-    <div class="container">
+    <div class="progress__container container">
         <div class="progress__text">
             <h3 class="title">“до и после”</h3>
             <p class="progress__under_title under_title">Это видео показывает прогресс, которого я добилась с моим
@@ -192,7 +200,7 @@
         <li>метод</li>
     </ul>
 
-    <div class="container">
+    <div class="my_method__container container">
         <div class="progress__text">
             <h3 class="title">мой метод</h3>
             <p class="progress__under_title under_title">Если Вы ищете волшебных пилюль, способных «вылечить» от
@@ -205,7 +213,7 @@
             <div class="my_method__approaches_column col">
                 <div class="my_method__approaches_item item">
                     <div class="approaches_top">
-                        <h4 class="title_methods approaches_title">Заикание <br> — не болезнь</h4>
+                        <h4 class="add_indent title_methods approaches_title">Заикание <br> — не болезнь</h4>
                         <img class="approaches_img" src="image/myMethod/01.jpg" alt="">
                     </div>
                     <p class="approaches_text">
@@ -218,7 +226,7 @@
             <div class="my_method__approaches_column col">
                 <div class="my_method__approaches_item item">
                     <div class="approaches_top">
-                        <h4 class="title_methods approaches_title">Глубинное осознание</h4>
+                        <h4 class="title_methods approaches_title">Глубинное <br> осознание</h4>
                         <img class="approaches_img" src="image/myMethod/02.jpg" alt="">
                     </div>
                     <p class="approaches_text">
@@ -230,7 +238,7 @@
             <div class="my_method__approaches_column col">
                 <div class="my_method__approaches_item item">
                     <div class="approaches_top">
-                        <h4 class="title_methods approaches_title">Устранение дисгармонии</h4>
+                        <h4 class="title_methods approaches_title">Устранение <br> дисгармонии</h4>
                         <img class="approaches_img" src="image/myMethod/03.png" alt="">
                     </div>
                     <p class="approaches_text">
@@ -352,10 +360,10 @@
     <div class="vertical-line vertical-line__center"></div>
     <div class="vertical-line vertical-line__left"></div>
 
-<!--    <ul class="road__method my_method__method biggest_text">-->
-<!--        <li>Мои программы</li>-->
-<!--        <li>Мои программы</li>-->
-<!--    </ul>-->
+    <!--    <ul class="road__method my_method__method biggest_text">-->
+    <!--        <li>Мои программы</li>-->
+    <!--        <li>Мои программы</li>-->
+    <!--    </ul>-->
 
     <div class="road__content">
         <div class="road_container container">
