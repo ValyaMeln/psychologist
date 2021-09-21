@@ -1,14 +1,15 @@
-@media screen and (max-width: 1090px) {
-    .my_programs__item-active {
-        /*height: auto;*/
+@media screen and (min-width: 1200px) {
+    .header {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .icon-menu {
+        display: none;
     }
 }
 
 @media screen and (max-width: 1200px) {
-    .container {
-        width: 1140px;
-    }
-
     .header__container {
         display: none;
     }
@@ -21,8 +22,6 @@
     .icon-menu {
         display: block;
         position: relative;
-        /*width: 30px;*/
-        /*height: 18px;*/
         cursor: pointer;
         z-index: 5;
     }
@@ -69,17 +68,20 @@
         height: 27px;
     }
 
+    .my_programs__method {
+        display: none;
+    }
+
     .quote__content {
         padding: 0 100px;
     }
 
-    .whoI__photo {
-        padding-right: 75px;
+    .whoI_container {
+        display: flex;
     }
 
     .whoI .social {
         z-index: 5;
-        /*background: #FAFCFF;*/
     }
 
     .btn::before {
@@ -88,11 +90,6 @@
 }
 
 @media screen and (max-width: 992px) {
-    .container {
-        width: 960px;
-        /*padding: 0 15px 50px;*/
-    }
-
     .line {
         height: 4px;
         width: 168px;
@@ -138,9 +135,7 @@
     }
 
     .quote__title::before {
-        /*width: 50px;*/
         left: -60px;
-        /*height: 49px;*/
         background: transparent url(../image/quote/quotes.png) 0 0/65% no-repeat;
     }
 
@@ -150,16 +145,11 @@
 
     .whoI_container {
         padding-top: 30px;
-
     }
 
     .title {
         padding: 0;
         font-size: 35px;
-    }
-
-    .whoI__photo {
-        padding-right: 75px;
     }
 
     .learn_more__btn {
@@ -171,7 +161,6 @@
     }
 
     .my_programs__col {
-        flex: 0 0 50%;
         margin-bottom: 30px;
     }
 
@@ -183,18 +172,14 @@
     .my_programs__method li {
         width: 50%;
     }
+
+    .my_programs__approaches_item {
+        padding: 0 0 30px 0;
+    }
 }
 
 
 @media (max-width: 768px) {
-    .container {
-        width: 720px;
-    }
-
-    .quote__container {
-        padding-top: 100px;
-    }
-
     .quote__content {
         font-size: 45px;
     }
@@ -228,6 +213,10 @@
         margin-bottom: 30px;
     }
 
+    .my_programs__method {
+        display: none;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -236,22 +225,29 @@
         flex-direction: column;
     }
 
-    .container {
-        width: 540px;
-        padding: 0 70px 0 10px;
+    .quote {
+        padding: 0;
     }
 
-    .whoI_container {
-        flex-direction: column-reverse;
+    .quote__content {
+        padding: 0;
+    }
+
+    .quote__title__author {
+        margin-bottom: 30px;
+    }
+
+    .line {
+        display: none;
+        margin-top: 50%;
     }
 
     .whoI_info {
-        max-width: 100%;
         padding-right: 75px;
     }
 
     .whoI__photo {
-        max-width: 100%;
+        padding-right: 75px;
     }
 
     .wrapper a {
@@ -260,10 +256,6 @@
 
     .under_title {
         padding: 0;
-    }
-
-    .row {
-        flex-direction: column;
     }
 
     .progress__player {
@@ -286,15 +278,42 @@
         margin: 0 70px 0 10px;
     }
 
-    .road_container {
-
-        padding: 95px 0 100px;
-    }
-
     .road__title {
         padding: 0;
         font-size: 21px;
         line-height: 45px;
+    }
+
+    .footer_container {
+        display: inline-block;
+    }
+
+    .footer__content {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .info_contact__item:first-child {
+        margin: 0;
+    }
+
+    .email {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .quote__content {
+        padding: 10px 40px;
+
+    }
+
+    .quote__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .quote__title::before {
+        display: none;
     }
 }
 
