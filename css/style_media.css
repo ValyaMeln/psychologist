@@ -69,7 +69,16 @@
     }
 
     .my_programs__method {
-        display: none;
+        /*display: none;*/
+    }
+
+    .my_programs__item-active {
+        padding: 20px;
+    }
+
+    .my_programs__btn, .button-img {
+        padding-left: 40px;
+        padding-right: 40px;
     }
 
     .quote__content {
@@ -156,6 +165,10 @@
         width: 65%;
     }
 
+    .my_method {
+        padding-bottom: 50px;
+    }
+
     .my_method__btn {
         width: 45%;
     }
@@ -169,12 +182,15 @@
         white-space: pre-line;
     }
 
-    .my_programs__method li {
-        width: 50%;
-    }
 
     .my_programs__approaches_item {
-        padding: 0 0 30px 0;
+        padding: 30px 0;
+
+    }
+
+    .progress__text {
+        text-align: center;
+        padding-top: 20px;
     }
 }
 
@@ -186,6 +202,11 @@
 
     .quote__title__author {
         margin-bottom: 100px;
+    }
+
+    .road {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .round_page_buttons__string {
@@ -214,12 +235,38 @@
     }
 
     .my_programs__method {
-        display: none;
+        /*display: none;*/
     }
+
+    .footer {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .email {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .my_method__approaches, .my_programs__row {
+        padding-right: 70px;
+    }
+}
+
+@media screen and (max-width: 576px) {
 
 }
 
 @media (max-width: 576px) {
+    .glass-white, .glass-orange {
+        display: none;
+    }
+
+    .button-img {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
     .header {
         flex-direction: column;
@@ -262,16 +309,35 @@
         margin: 0 75px 0 10px;
     }
 
-    .my_programs__item-active {
-        height: 100%;
+    .button-img {
+        width: 100%;
+        justify-content: center;
     }
 
-    .my_programs__method li {
-        display: none;
+    .wrapper-button-img {
+        padding-right: 70px;
+    }
+
+    .progress__text {
+        padding-right: 70px;
+        margin-bottom: 15px;
+    }
+
+    .my_method {
+        padding-bottom: 15px;
+    }
+
+    .my_method__button-img {
+        margin: 0;
     }
 
     .biggest_text {
         display: none;
+    }
+
+    .my_programs__title {
+        font-size: 25px;
+        line-height: 30px;
     }
 
     .road__content {
@@ -284,8 +350,15 @@
         line-height: 45px;
     }
 
+    .road__button-img {
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+
     .footer_container {
-        display: inline-block;
+        /*display: inline-block;*/
+        justify-content: space-around;
     }
 
     .footer__content {
