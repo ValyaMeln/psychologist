@@ -31,10 +31,12 @@ img {
     background: #ff8e01;
     color: #FFFFFF;
 }
-.button-img:hover .button-img__text{
+
+.button-img:hover .button-img__text {
     color: #FFFFFF;
     text-decoration: none;
 }
+
 .button-img__text {
     font-weight: 600;
     font-size: 14px;
@@ -132,7 +134,7 @@ img {
 }
 
 [class*='vertical-line'] {
-    display: none;
+    /*display: none;*/
 }
 
 .wrapper a {
@@ -464,8 +466,9 @@ img {
 
 .whoI {
     position: relative;
-    background: #FFFFFF;
-    z-index: 4;
+    padding-top: 100px;
+    /*background: #FFFFFF;*/
+    /*z-index: 4;*/
 }
 
 .whoI_info {
@@ -497,13 +500,17 @@ img {
     width: 45%;
     filter: drop-shadow(0px 30px 80px rgba(41, 87, 182, 0.3));
 }
-.whoI__button-img{
+
+.whoI__button-img {
     margin-top: 66px;
+    background: transparent;
     /*text-align: start;*/
 }
-.button-img__glass-white, .button-img__glass-orange{
+
+.button-img__glass-white, .button-img__glass-orange {
     margin-left: 10px;
 }
+
 .learn_more__btn::before {
     right: 40px;
 }
@@ -555,8 +562,10 @@ img {
     background: #FFFFFF;
     height: 100%;
     flex-direction: column;
+    overflow: visible;
 }
-.progress__container{
+
+.progress__container {
     position: relative;
 }
 
@@ -595,13 +604,35 @@ img {
     height: 104px;
     background: #FFFFFF;
     border: 1px solid #FFFFFF;
+    cursor: pointer;
+    transition: background 0.5s ease;
 }
 
-.player_btn:hover .progress__player-svg path:hover {
-    fill: #1746d2;
+.player_btn:hover {
+    width: 150px;
+    height: 150px;
+    background: #FF8E01;
+    border: 1px solid #FF8E01;
 }
 
-.player_btn__radius:first-child {
+.progress__player-svg {
+    transition: fill .5s ease;
+}
+
+.player_btn:hover .progress__player-svg path {
+    fill: #FFFFFF;
+    width: 28px;
+    height: 31px;
+}
+
+.player_btn::before {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    margin: auto;
     position: absolute;
     width: 173px;
     height: 173px;
@@ -609,15 +640,36 @@ img {
     opacity: 0.2;
 
     border: 1px solid #FFFFFF;
+    transition: width 0.5s ease, height .5s ease;
 }
 
-.player_btn__radius {
+.player_btn:hover::before {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #FFFFFF;
+}
+
+.player_btn::after {
+    content: "";
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    margin: auto;
     position: absolute;
     width: 136px;
     height: 136px;
     border-radius: 50%;
     opacity: 0.4;
     border: 1px solid #FFFFFF;
+    transition: width 0.5s ease, height .5s ease;
+}
+
+.player_btn:hover::after {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #FFFFFF;
 }
 
 .progress__player-svg {
@@ -625,9 +677,10 @@ img {
 }
 
 /*======================================*/
-.my_method__container{
+.my_method__container {
     position: relative;
 }
+
 .my_method {
     position: relative;
     padding-top: 3px;
@@ -669,9 +722,11 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.my_method__button-img{
+
+.my_method__button-img {
     margin: 0 auto;
 }
+
 /*===========Загальний стиль заголовка методів==============*/
 .title_methods {
     font-weight: 600;
@@ -741,10 +796,12 @@ img {
 .my_programs__under_title {
     margin: 0;
 }
-.my_programs{
+
+.my_programs {
     position: relative;
 }
-.my_programs__method{
+
+.my_programs__method {
     position: absolute;
     width: 100%;
     left: 0;
@@ -752,6 +809,7 @@ img {
     padding: 63px 0 48px 0;
     background: #FFFFFF;
 }
+
 /*.my_programs::after {*/
 /*    content: "";*/
 /*    position: absolute;*/
@@ -805,11 +863,13 @@ img {
     visibility: visible;
     /*width: 100%;*/
 }
-.my_programs__button-img{
+
+.my_programs__button-img {
     justify-content: center;
     padding-left: 50px;
     padding-right: 50px;
 }
+
 .image_radius-background {
     position: relative;
     top: 0;
@@ -935,10 +995,12 @@ img {
     padding: 20px 90px;
     text-align: start;
 }
-.road__button-img{
+
+.road__button-img {
     margin: 50px auto 0;
     padding: 20px 90px;
 }
+
 .road__btn::before {
     right: 90px;
 }

@@ -10,6 +10,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+    .vertical-line__two, .vertical-line__three {
+        display: none;
+    }
+
     .header__container {
         display: none;
     }
@@ -99,6 +103,7 @@
 }
 
 @media screen and (max-width: 992px) {
+
     .line {
         height: 4px;
         width: 168px;
@@ -133,11 +138,10 @@
         padding: 100px 0 40px;
     }
 
-    .quote .vertical-line__right,
-    .quote .vertical-line__left {
-        position: static;
-    }
-
+    /*.quote .vertical-line__right,*/
+    /*.quote .vertical-line__left {*/
+    /*    position: static;*/
+    /*}*/
     .quote__title {
         font-size: 40px;
         line-height: 50px;
@@ -196,6 +200,10 @@
 
 
 @media (max-width: 768px) {
+    .vertical-line__right, .vertical-line__left {
+        display: none;
+    }
+
     .quote__content {
         font-size: 45px;
     }
@@ -248,17 +256,23 @@
     }
 }
 
-@media screen and (max-width: 828px) {
+@media (min-width: 768px) and (max-width: 842px) {
     .my_method__approaches, .my_programs__row {
         padding-right: 70px;
     }
 }
 
-@media screen and (max-width: 576px) {
-
+@media screen and (max-width: 575px) {
+    .quote__content {
+        padding: 10px 45px;
+    }
 }
 
 @media (max-width: 576px) {
+    [class*='vertical-line'] {
+        display: none;
+    }
+
     .glass-white, .glass-orange {
         display: none;
     }
@@ -273,10 +287,6 @@
     }
 
     .quote {
-        padding: 0;
-    }
-
-    .quote__content {
         padding: 0;
     }
 
@@ -375,11 +385,6 @@
         padding: 0;
     }
 
-    .quote__content {
-        padding: 10px 40px;
-
-    }
-
     .quote__title {
         font-size: 30px;
         line-height: 40px;
@@ -387,6 +392,19 @@
 
     .quote__title::before {
         display: none;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .btn_prev, .btn_next {
+        height: 80px;
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .footer_container {
+        flex-direction: column;
     }
 }
 
@@ -400,5 +418,8 @@
         margin-bottom: 10px;
     }
 }
+
+
+
 
 
